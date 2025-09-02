@@ -4,6 +4,7 @@
 import { dataSite } from '@/data';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useContext } from 'react';
 import { CartContext } from 'ui-old-version';
 
@@ -11,6 +12,7 @@ import { CartContext } from 'ui-old-version';
 const productsData = dataSite.products;
 
 const ProductsSection = ({ isHome = true }) => {
+  const router = useRouter();
   const { handleAddOrRemoveProduct, validateProductInCart } =
     useContext(CartContext);
   const containerVariants = {
@@ -67,9 +69,13 @@ const ProductsSection = ({ isHome = true }) => {
           viewport={{ once: true, amount: 0.1 }}
         >
           {productsData
-            .filter((product) => parseFloat(product.price) > 100)
+            .filter((product) => parseFloat(product.price) > 50)
             .map((product) => {
               const handleClick = () => {
+                if (isHome) {
+                  router.push('/contact');
+                  return;
+                }
                 handleAddOrRemoveProduct(product.id);
               };
 
@@ -161,9 +167,13 @@ const ProductsSection = ({ isHome = true }) => {
             viewport={{ once: true, amount: 0.1 }}
           >
             {productsData
-              .filter((product) => parseFloat(product.price) < 100)
+              .filter((product) => parseFloat(product.price) < 50)
               .map((product) => {
                 const handleClick = () => {
+                  if (isHome) {
+                    router.push('/contact');
+                    return;
+                  }
                   handleAddOrRemoveProduct(product.id);
                 };
 
