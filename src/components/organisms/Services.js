@@ -50,8 +50,7 @@ const ServicesSection = () => {
           viewport={{ once: true, amount: 0.1 }}
         >
           {eventsData.slice(0, 4).map((event, index) => (
-            <motion.a
-              href='#'
+            <motion.div
               key={index}
               variants={itemVariants}
               className='group relative block h-80 rounded-lg overflow-hidden shadow-lg'
@@ -76,12 +75,12 @@ const ServicesSection = () => {
                   <div className='mt-4 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-stone-300'>
                     <Link href={'#services'}>
                       <span>Learn More</span>
-                      <LuArrowRight />
                     </Link>
+                    <LuArrowRight />
                   </div>
                 </div>
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </motion.div>
       </div>

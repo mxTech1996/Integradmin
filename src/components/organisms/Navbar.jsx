@@ -39,13 +39,13 @@ const NavBar = ({ withAll = true, withCart = false, textBlack = false }) => {
           {withAll && (
             <nav className='hidden lg:flex gap-10 text-sm text-gray-200'>
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   className='hover:text-white transition-colors'
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </nav>
           )}
