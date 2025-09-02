@@ -1,84 +1,112 @@
+// CÓDIGO COMPLETO PARA LA PRIMERA SECCIÓN
+// Guárdalo en un archivo como: /components/Hero.js
+
 'use client';
+
+import { dataSite, email } from '@/data';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { PiHandsClappingDuotone } from 'react-icons/pi';
-
-import Container from '../atoms/Container';
 import { useContext } from 'react';
+import { LuPhone, LuMail, LuTwitter, LuShoppingBag } from 'react-icons/lu';
 import { CartContext } from 'ui-old-version';
-// import phone icon
-import { PiPhoneCall } from 'react-icons/pi';
 
-const Navbar = ({ withAll = true, withCart = false }) => {
-  const { products } = useContext(CartContext);
-
+// --- Componente de Barra de Navegación (Header) ---
+// Incluye la barra superior de contacto y la navegación principal.
+const Navbar = ({ withCart = false, textBlack = false, withAll = true }) => {
+  const navLinks = [
+    { title: 'About Us', href: '#about' },
+    { title: 'Services', href: '#services' },
+    { title: 'Products', href: '#products' },
+    { title: 'Why Us', href: '#why-us' },
+  ];
   return (
-    <nav className='w-full px-4 md:px-0 bg-blue-400'>
-      <Container className='flex justify-between h-20 items-center'>
-        <div>
-          <Link
-            href='/'
-            className='text-secondary font-black text-xs sm:text-sm flex gap-2 items-center leading-none text-white'
-          >
-            <span className='text-lg'>
-              <PiHandsClappingDuotone />
-            </span>
-
-            <p>Golarzep</p>
-          </Link>
-        </div>
-
-        {withAll && (
-          <div className=' flex flex-1 justify-end items-center gap-4 sm:gap-10 text-sm sm:text-base font-medium text-primary sm:text-white'>
-            <Link href='#our-services'>Our Services</Link>
-            <Link href='#benefits' className='hidden sm:block'>
-              Benefits
-            </Link>
-
-            {withCart ? <CartButton /> : <GetAQuoteButton />}
+    <motion.header
+      initial={{ y: -120 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className='absolute top-0 left-0 right-0 z-20'
+    >
+      {/* Top Bar */}
+      <div className='bg-slate-900 bg-opacity-80 backdrop-blur-sm'>
+        <div
+          className={`container mx-auto px-4 h-10 flex justify-between items-center text-xs text-gray-300`}
+        >
+          <div className='flex gap-4 items-center'>
+            <a
+              href={`tel:${dataSite.telephone}`}
+              className='flex items-center gap-2 hover:text-yellow-400'
+            >
+              <LuPhone size={14} />
+              <span>{dataSite.telephone} </span>
+            </a>
+            <a
+              href={`mailto:${email}`}
+              className='hidden md:flex items-center gap-2 hover:text-yellow-400'
+            >
+              <LuMail size={14} />
+              <span>{email} </span>
+            </a>
           </div>
-        )}
-      </Container>
-    </nav>
+          <div className='flex gap-4 items-center'>
+            {/* <LuTwitter className='cursor-pointer hover:text-yellow-400' />
+            <LuLinkedin className='cursor-pointer hover:text-yellow-400' /> */}
+          </div>
+        </div>
+      </div>
+      {/* Main Navbar */}
+      <div className='bg-white/10 backdrop-blur-sm'>
+        <div
+          className={`container mx-auto px-4 h-20 flex justify-between items-center ${
+            textBlack ? 'text-black' : 'text-white'
+          }`}
+        >
+          <Link href='/'>
+            <div className='text-2xl font-bold'>Ibarra</div>
+          </Link>
+          {withAll && (
+            <nav className='hidden lg:flex gap-8 text-sm'>
+              {navLinks.map((link) => (
+                <a
+                  key={link.title}
+                  href={link.href}
+                  className='hover:text-yellow-400 transition-colors'
+                >
+                  {link.title}
+                </a>
+              ))}
+            </nav>
+          )}
+          {!withCart ? (
+            <a
+              href='/contact'
+              className='px-6 py-2 bg-yellow-400 text-slate-900 font-semibold rounded-md hover:bg-yellow-500 transition-colors'
+            >
+              Get a Quote
+            </a>
+          ) : (
+            <ShopButtonWithIcon />
+          )}
+        </div>
+      </div>
+    </motion.header>
   );
 };
 
 export default Navbar;
 
-const CartButton = () => {
+const ShopButtonWithIcon = () => {
   const { products } = useContext(CartContext);
-
   return (
-    <div className='bg-third rounded-md p-2.5 flex justify-center items-center'>
-      <Link
-        href='/my-cart'
-        className='hover:text-primary hover:underline flex items-center md:text-lg'
-      >
-        <div className='relative '>
-          {products.length > 0 && (
-            <div className='w-5 h-5 flex items-center justify-center rounded-full bg-secondary absolute -top-4 -right-4'>
-              <p className='text-white text-[10px]'>
-                {products.length > 99 ? '' : products.length}
-              </p>
-            </div>
-          )}
-          <AiOutlineShoppingCart className='text-white' size={17} />
-        </div>
-      </Link>
-    </div>
-  );
-};
-
-const GetAQuoteButton = () => {
-  return (
-    <div className='bg-third rounded-md p-2.5 flex justify-center items-center'>
-      <Link
-        href='/contact'
-        className='hover:text-primary hover:underline flex items-center md:text-lg'
-      >
-        <p className='text-white mr-3'>Get a Quote</p>
-        <PiPhoneCall className='text-white' size={25} />
-      </Link>
-    </div>
+    <Link href='/my-cart'>
+      <button className='relative flex items-center gap-2 px-4 py-2 bg-yellow-400 text-slate-900 font-semibold rounded-md hover:bg-yellow-500 transition-colors'>
+        <LuShoppingBag size={18} />
+        <span>Shop Now</span>
+        {products.length > 0 && (
+          <span className='absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full px-2 py-1'>
+            {products.length}
+          </span>
+        )}
+      </button>
+    </Link>
   );
 };

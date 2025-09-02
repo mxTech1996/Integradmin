@@ -1,45 +1,17 @@
-const Button = ({ className, children, gradient, flat, flatWhite, flatBlack, white,
-  black, ...props }) => {
-
-  const validateType = () => {
-    if (gradient) {
-      return "bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl text-white"
-    }
-
-    if (flat) {
-      return 'bg-transparent hover:bg-third border border-primary text-third hover:text-black'
-    }
-
-    if (flatWhite) {
-      return 'bg-transparent hover:bg-white border border-white text-white hover:text-black'
-    }
-
-    if (flatBlack) {
-      return 'bg-transparent hover:bg-black border border-black text-black hover:text-white'
-    }
-
-    if (white) {
-      return "bg-white text-black"
-    }
-
-    if (black) {
-      return "bg-black text-white"
-    }
-
-    return "bg-third text-white"
-  }
-
+// --- Componente de Botón Reutilizable ---
+const Button = ({ children, variant = 'primary', ...props }) => {
+  const baseClasses =
+    'px-8 py-3 rounded-md font-semibold transition-colors duration-300';
+  const variants = {
+    primary: 'bg-amber-600 text-white hover:bg-amber-700',
+    outline:
+      'bg-transparent text-white border border-white hover:bg-white hover:text-slate-900',
+  };
   return (
-    <button
-      className={`${validateType()} transition-colors focus:ring-4 focus:ring-blue-300 font-bold rounded-xl text-xs xl:text-sm px-5 py-2.5 ${className} disabled:bg-gray-300`}
-      {...props}
-    >
+    <button className={`${baseClasses} ${variants[variant]}`} {...props}>
       {children}
     </button>
   );
 };
 
-
-
 export default Button;
-

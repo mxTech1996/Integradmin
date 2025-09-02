@@ -4,6 +4,7 @@ import Input from '../../components/atoms/Input';
 import Button from '../../components/atoms/button';
 import Navbar from '../../components/organisms/Navbar';
 import Footer from '../../components/organisms/Footer';
+import { email as emailTosend } from '@/data';
 
 export default function ContactUs() {
   const [name, setName] = useState('');
@@ -21,16 +22,15 @@ export default function ContactUs() {
     if (!regExpEmail.test(email)) {
       return alert('No es un email válido');
     }
-
-    const emailToSend = `mailto:info@golarzep.com?subject=Contacto desde web | ${name}&body=${message}`;
+    const emailToSend = `mailto:${emailTosend}?subject=Contacto desde web | ${name}&body=${message}`;
 
     window.open(emailToSend, '_blank');
   };
   return (
     <main>
       <div>
-        <Navbar />
-        <div className='flex flex-col justify-between bg-white p-8 text-black pr-20'>
+        <Navbar textBlack={true} />
+        <div className='mt-52 flex flex-col justify-between bg-white p-8 text-black pr-20'>
           <h2 className='uppercase text-xl font-bold'>Contact Us</h2>
           <h1>Send us a message and we will happy to help you.</h1>
         </div>
@@ -63,8 +63,8 @@ export default function ContactUs() {
               onChange={(e) => setMessage(e.target.value)}
             />
 
-            <div>
-              <Button type='submit' className='mt-10' flatBlack>
+            <div className='mt-10'>
+              <Button type='submit' flatBlack>
                 Send Message
               </Button>
             </div>

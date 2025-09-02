@@ -1,8 +1,6 @@
-export const pageName = 'Golarzep';
-export const phoneNumber = '+525511447994';
-export const address =
-  'RIO POO NUMERO 43 COLONIA CUAUHTEMOC CP 6500 CUAUHTEMOC CIUDAD DE MEXICO';
-export const email = 'info@golarzep.com';
+export const pageName = 'Ibarra';
+
+export const email = 'info@detroit.com';
 import { IoCall, IoFileTraySharp, IoMail } from 'react-icons/io5';
 
 export const navData = [
@@ -43,21 +41,6 @@ export const footerData = [
   },
 ];
 
-export const contactData = [
-  {
-    Icon: IoCall,
-    text: phoneNumber,
-  },
-  {
-    Icon: IoFileTraySharp,
-    text: address,
-  },
-  {
-    text: email,
-    Icon: IoMail,
-  },
-];
-
 export const benefitsData = [
   {
     id: 1,
@@ -82,270 +65,381 @@ export const benefitsData = [
   },
 ];
 
-export const productsData = [
-  {
-    id: 1,
-    price: '45.00',
-    name: 'CREATIVE WRITING',
-    description:
-      'Creative writing helps businesses stand out with unique content that engages their audience and cultivates brand loyalty. It can also inspire innovation and fresh perspectives.',
-    image: '/images/social-3.jpg',
-    stock: 1000,
-    features: [
-      'Unique and engaging content creation',
-      'Brand storytelling techniques',
-      'Audience engagement strategies',
-      'Innovation and creativity in writing',
-      'Effective communication through written word',
-    ],
-  },
-  {
-    id: 2,
-    price: '100.00',
-    name: 'ADVERTISING CONTENT',
-    description:
-      'Advertising content helps businesses promote their products or services and increase sales. It can be used to target specific audiences and create memorable brand experiences.',
-    image: '/images/business-2.jpg',
-    stock: 1000,
-    features: [
-      'Targeted advertising strategies',
-      'Brand messaging and positioning',
-      'Conversion-focused content creation',
-      'Measurable advertising campaign results',
-      'Memorable and impactful ad campaigns',
-    ],
-  },
-  {
-    id: 3,
-    price: '150.00',
-    name: 'SOCIAL MEDIA CONTENT',
-    description:
-      'Social media content helps businesses build their online presence and engage with their audience. It can be used to showcase products or services, share company news and promote brand loyalty.',
-    image: '/images/social-2.jpg',
-    stock: 1000,
-    features: [
-      'Social media platform optimization',
-      'Content calendar planning and scheduling',
-      'Audience targeting and engagement',
-      'Visual content creation (images, videos)',
-      'Analytics and performance tracking',
-    ],
-  },
-  {
-    id: 4,
-    price: '100.00',
-    name: 'CORPORATE CONTENT',
-    description:
-      'Corporate content helps businesses establish their brand identity and communicate their values to stakeholders. It can be used for internal communication, investor relations, and public relations.',
-    image: '/images/business-1.jpg',
-    stock: 1000,
-    features: [
-      'Brand identity development',
-      'Internal communication materials',
-      'Investor relations documents',
-      'Public relations content creation',
-      'Corporate storytelling and messaging',
-    ],
-  },
-  {
-    id: 5,
-    price: '60.00',
-    name: 'VIDEO PRODUCTION',
-    description:
-      'Video production is a powerful tool for businesses to convey their message effectively. This course covers video shooting, editing, and storytelling techniques to create compelling videos that captivate the audience.',
-    image: '/images/video.jpg',
-    stock: 8,
-    content: [
-      'Video shooting techniques',
-      'Video editing using industry-standard software',
-      'Storytelling through video',
-      'Effective video marketing strategies',
-      'Scriptwriting for video content',
-    ],
-  },
-  {
-    id: 6,
-    price: '55.00',
-    name: 'SOCIAL MEDIA MARKETING',
-    description:
-      'Social media marketing is essential for businesses to reach and engage their target audience. This course provides strategies for effective social media campaigns, content creation, and analytics to drive business growth.',
-    image: '/images/social-media.jpg',
-    stock: 3,
-    content: [
-      'Social media strategy development',
-      'Creating compelling social media content',
-      'Audience targeting and engagement',
-      'Social media advertising techniques',
-      'Analytics and measurement for social media success',
-    ],
-  },
-  {
-    id: 7,
-    price: '35.00',
-    name: 'GRAPHIC DESIGN',
-    description:
-      'Graphic design plays a crucial role in branding and visual communication. This course teaches the fundamentals of graphic design, including color theory, typography, layout design, and using design software.',
-    image: '/images/graphic.jpg',
-    stock: 10,
-    content: [
-      'Principles of graphic design',
-      'Color theory and typography',
-      'Layout design and composition',
-      'Using industry-standard design software',
-      'Creating visually appealing designs',
-    ],
-  },
-  {
-    id: 8,
-    price: '25.00',
-    name: 'BRAND STORYTELLING',
-    description:
-      'Brand storytelling is a powerful marketing technique that helps businesses connect with their audience on a deeper level. This course explores the art of crafting compelling brand stories that resonate with customers and leave a lasting impact.',
-    image: '/images/branding.jpg',
-    stock: 7,
-    content: [
-      'Understanding the importance of brand storytelling',
-      'Identifying brand values and key messages',
-      'Crafting a compelling brand narrative',
-      'Utilizing storytelling techniques across different platforms',
-      'Measuring the effectiveness of brand storytelling',
-    ],
-  },
-];
+export const dataSite = {
+  name: 'Ibarra',
+  url: 'https://es.wiktionary.org/wiki/hol',
+  telephone: '5516453412',
+  email: '',
+  address:
+    'AV.RIO MIXCOAC 25, PISO 2 INTERIOR 1 B, CREDITO CONSTRUCTOR, BENITO JUAREZ, CIUDAD DE MEXICO, C.P.03940',
+  description:
+    'Our website is designed to provide comprehensive management consulting solutions, aimed at optimizing business operations and driving sustainable growth for organizations. Through a professional and user-friendly platform, we offer companies of all sizes access to tailored strategies in key areas such as strategic planning, human resources management, operational processes, corporate finance, and digital transformation.',
+  subtitle: 'Empowering Businesses with Smart Management Solutions',
+  image_hero:
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarra_1__7E1m3tC.jpg',
+  image_hero2:
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarar2__uswwAn4.jpg',
+  iconImage:
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarra-admincont-sa-de-cv-high-resolution-logo_mNz8lJ3.png',
+  info: [
+    {
+      title: 'Data Driven Decision Coaching',
+      description:
+        'Personalized mentoring that leverages analytics dashboards and KPIs to guide executives toward smarter, evidence-based decisions.',
+    },
+    {
+      title: 'AI-Powered Business Diagnostics',
+      description:
+        'Use of artificial intelligence tools to analyze company data and provide real-time recommendations for efficiency, cost reduction, and decision-making.',
+    },
+    {
+      title: 'Virtual Strategy Labs',
+      description:
+        'Interactive online workshops where business leaders can simulate scenarios, test strategies, and receive expert feedback instantly.',
+    },
+    {
+      title: 'Sustainability & ESG Consulting',
+      description:
+        'Advisory services focused on integrating sustainable practices, ESG (Environmental, Social, Governance) compliance, and green certifications into business operations.',
+    },
+    {
+      title: 'Remote Workforce Management Solutions',
+      description:
+        'Specialized consulting to optimize productivity, communication, and performance tracking in hybrid or fully remote teams.',
+    },
+  ],
+  services: [
+    {
+      title: 'Business Strategy Development',
+      description:
+        'Helping organizations define long-term goals, competitive positioning, and growth strategies.',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_5_.jpg',
+    },
+    {
+      title: 'Financial Planning and Analysis',
+      description:
+        'Providing budgeting, forecasting, and financial strategy guidance to support informed decision-making.',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_8_.jpg',
+    },
+    {
+      title: 'Operational Efficiency Consulting',
+      description:
+        'Analyzing business processes to optimize performance, reduce costs, and improve productivity',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibrara_6_.jpg',
+    },
+    {
+      title: 'Organizational Design and Restructuring',
+      description:
+        'Designing effective organizational structures, roles, and workflows to enhance collaboration and performance.',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_7_.jpg',
+    },
+    {
+      title: 'Change Management and Implementation Support',
+      description:
+        'Guiding businesses through transformations, including technology adoption, process changes, and cultural shifts.',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_9_.jpg',
+    },
+  ],
+  references: [
+    {
+      name: 'Angy Fausto',
+      description:
+        'Their strategic insights completely transformed our business approach. We now operate with much more efficiency and clarity.',
+      rating: 5,
+      image: null,
+    },
+    {
+      name: 'Manger of startup',
+      description:
+        'Thanks to their digital transformation roadmap, our company successfully implemented new technologies with minimal disruption.',
+      rating: 5,
+      image: null,
+    },
+    {
+      name: 'David H., HR Director',
+      description:
+        'The leadership assessment and training programs were invaluable. Our managers are now more confident and effective in their roles.',
+      rating: 5,
+      image: null,
+    },
+    {
+      name: 'Laura M., Business Owner',
+      description:
+        'Professional, responsive, and results-driven. Their guidance has helped our organization grow sustainably and strategically.',
+      rating: 5,
+      image: null,
+    },
+    {
+      name: 'July Ignacio',
+      description:
+        'The team’s expertise in process optimization helped us cut costs and improve productivity across all departments',
+      rating: 5,
+      image: null,
+    },
+  ],
+  products: [
+    {
+      id: 947,
+      name: 'Market Analysis Report',
+      category: null,
+      description:
+        'Detailed research on industry trends, competitors, and opportunities for growth.',
+      price: '145.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_16_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 953,
+      name: 'KPI Monitoring Dashboard',
+      category: null,
+      description:
+        'Customizable dashboard to track performance metrics across departments.',
+      price: '23.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra20.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 940,
+      name: 'Organizational Structure Design Kit',
+      category: null,
+      description:
+        'Organizational analysis and redesign package to improve hierarchies, workflows, and key roles within the company,Consultport ,Organizational Design Tool Kit,Consultport ,Organizational Design Toolkit,PDF guide ,organizational chart template; covers types of structures, key factors, and strategic considerations.',
+      price: '120.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_4.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 943,
+      name: 'Human Capital Development Plan',
+      category: null,
+      description:
+        "A Human Capital Development Plan is a strategic framework designed to enhance an organization's workforce capabilities. It focuses on aligning employee skills, experiences, and potential with organizational goals, ensuring sustainable growth and adaptability in a dynamic business environment.",
+      price: '145.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarrra_12_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 942,
+      name: 'Process Optimization Manual',
+      category: null,
+      description:
+        'A Process Optimization Manual is a comprehensive guide designed to help organizations enhance their workflow efficiency, reduce costs, and improve overall performance. It provides structured methodologies, tools, and best practices to identify inefficiencies and implement improvements effectively.',
+      price: '178.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_11.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 948,
+      name: 'Leadership Assessment Tool',
+      category: null,
+      description:
+        'Evaluates management skills, team dynamics, and leadership effectiveness.',
+      price: '175.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra__17_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 941,
+      name: 'Financial Health Report',
+      category: null,
+      description:
+        "A Financial Health Report is a comprehensive assessment tool that evaluates the financial stability and risk profile of a company. It provides an in depth analysis based on actual financial data, offering insights into the company's current and historical financial health.",
+      price: '90.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_10.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 939,
+      name: 'Business Strategy Blueprint',
+      category: null,
+      description:
+        'A detailed analysis of business objectives, competitive positioning, revenue models, and an execution roadmap,In depth exploration of market opportunities, operational efficiencies, and strategic initiatives aimed at sustainable and scalable growth,Internal valuation,equivalent to 4 credits and an estimated development timeline of 3 to 4 weeks.',
+      price: '130.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra._3.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 951,
+      name: 'Employee Training Module',
+      category: null,
+      description:
+        'Digital course or materials focused on improving skills and productivity within teams.',
+      price: '12.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_19_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 954,
+      name: 'Digital Adoption Planner',
+      category: null,
+      description:
+        'Roadmap for integrating new technologies and managing organizational change effectively.',
+      price: '18.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_21.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 952,
+      name: 'Compliance Audit Guide',
+      category: null,
+      description:
+        'Toolkit to ensure the organization meets legal and regulatory requirements.',
+      price: '15.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_20.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 950,
+      name: 'Budget Forecast Template',
+      category: null,
+      description:
+        'Pre designed template to plan financial projections and monitor expenses.',
+      price: '9.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_18.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 944,
+      name: 'Digital Transformation Roadmap',
+      category: null,
+      description:
+        'A Digital Transformation Roadmap is a strategic plan that guides an organization through the process of integrating digital technologies into all areas of its business. It serves as a blueprint for transforming business operations, enhancing customer experiences, and fostering innovation. The roadmap outlines the necessary steps, resources, and timelines to achieve a successful digital transformation.',
+      price: '138.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/IBARRA_13_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 949,
+      name: 'Operational Efficiency Checklist',
+      category: null,
+      description:
+        'Step by step guide to streamline processes and reduce operational bottlenecks.',
+      price: '189.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/pexels-rdne-9034219.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 945,
+      name: 'Risk and Compliance Toolkit',
+      category: null,
+      description:
+        'A Risk and Compliance Toolkit is a comprehensive set of resources designed to help organizations manage and mitigate risks associated with regulatory non-compliance. It integrates various features such as compliance tracking, audit management, risk assessment, and incident management to ensure businesses adhere to legal, industry-specific, and internal standards.',
+      price: '89.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_14_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 946,
+      name: 'Performance Dashboard Setup',
+      category: null,
+      description:
+        'A Performance Dashboard Setup is a strategic tool designed to monitor and visualize key performance indicators (KPIs) and metrics in real time. It consolidates data from various sources into a unified interface, enabling organizations to track performance, identify trends, and make informed decisions.',
+      price: '160.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_15_.jpg',
+      image2: null,
+      image3: null,
+    },
+  ],
+  categories: [],
+};
 
-export const additionalProducts = [
+export const phoneNumber = dataSite.telephone;
+export const address = dataSite.address;
+export const contactData = [
   {
-    id: 9,
-    price: '15.00',
-    name: 'Social Media Template Pack',
-    description:
-      'A pack of 10 professionally designed and fully customizable templates for Instagram posts and stories. The perfect tool to maintain a consistent and attractive feed with minimal effort.',
-    image: '/images/media.jpg',
-    stock: 5000,
-    features: [
-      '10 customizable templates (Canva/PSD)',
-      'Instagram Post & Story formats',
-      'Modern and clean design',
-      'Includes a quick-start guide',
-      'Boosts visual consistency',
-    ],
+    Icon: IoCall,
+    text: phoneNumber,
   },
   {
-    id: 10,
-    price: '9.00',
-    name: 'Brand Style Quick Guide',
-    description:
-      'A concise PDF guide that walks you through choosing the right colors, fonts, and imagery for your brand. Understand the basics of visual identity to communicate your message effectively.',
-    image: '/images/brand.jpg',
-    stock: 5000,
-    features: [
-      'Color psychology basics',
-      'Font pairing suggestions',
-      'How to create a mood board',
-      '5-step brand identity checklist',
-      'Printable PDF format',
-    ],
+    Icon: IoFileTraySharp,
+    text: address,
   },
   {
-    id: 11,
-    price: '7.00',
-    name: '50 Engaging Content Prompts',
-    description:
-      "Beat writer's block forever with this curated list of 50 content ideas and headline prompts for your blog, social media, and newsletters. Spark creativity and keep your audience engaged.",
-    image: '/images/prompt.jpg',
-    stock: 5000,
-    features: [
-      '20 blog post ideas',
-      '20 social media prompts',
-      '10 newsletter subject line formulas',
-      'Designed to boost engagement',
-      'Instant digital download',
-    ],
-  },
-  {
-    id: 12,
-    price: '12.00',
-    name: 'Starter Audio Pack for Videos',
-    description:
-      'A curated collection of 5 royalty-free background music tracks and 10 essential sound effects to give your video content a professional touch. Perfect for social media clips and corporate videos.',
-    image: '/images/audio.jpg',
-    stock: 5000,
-    features: [
-      '5 royalty-free music tracks',
-      '10 common sound effects (SFX)',
-      'High-quality MP3 files',
-      'Suitable for commercial use',
-      'Instant download link',
-    ],
-  },
-];
-export const categoriesData = [
-  {
-    name: 'Social Media',
-    image: '/images/social.svg',
-    id: 1,
-    items: [
-      'Community Management',
-      'Content Strategy',
-      'Ad Campaigns',
-      'Analytics',
-    ],
-  },
-  {
-    name: 'Marketing',
-    image: '/images/marketing.svg',
-    id: 2,
-    items: ['SEO & SEM', 'Email Marketing', 'Branding', 'Public Relations'],
-  },
-  {
-    name: 'Business',
-    image: '/images/business.svg',
-    id: 3,
-    items: ['E-commerce', 'Startup Planning', 'Project Management', 'Finance'],
-  },
-  {
-    name: 'Content Creator',
-    image: '/images/content.svg',
-    id: 4,
-    items: ['Video Production', 'Podcasting', 'Blogging', 'Live Streaming'],
-  },
-  {
-    name: 'Web and Mobile Development',
-    image: '/images/development.svg',
-    id: 5,
-    items: [
-      'React & Next.js',
-      'UI/UX Design',
-      'iOS & Android Apps',
-      'Backend APIs',
-    ],
-  },
-];
-
-export const references = [
-  {
-    title: 'María López',
-    description:
-      'This course on Creative Writing has transformed the way I approach content creation. The strategies and techniques taught have helped me engage my audience and create unique and compelling content for my business. Highly recommended!',
-  },
-  {
-    title: 'Carlos Rodríguez',
-    description:
-      'The Video Production course provided me with valuable skills in shooting and editing videos. I now have the confidence to create professional-looking videos for my business, and the storytelling techniques I learned have made a significant impact on my audience engagement.',
-  },
-  {
-    title: 'Laura Fernández',
-    description:
-      'I took the Social Media Marketing course, and it exceeded my expectations. The strategies and content creation tips shared were practical and effective. I now have a better understanding of how to leverage social media to grow my business and connect with my target audience.',
-  },
-  {
-    title: 'Diego Gómez',
-    description:
-      'The Graphic Design course was a game-changer for me. I learned the principles of design, color theory, and how to use design software effectively. Now I can create visually appealing designs that perfectly represent my brand. Thank you for this valuable course!',
-  },
-  {
-    title: 'Isabel Silva',
-    description:
-      'Brand Storytelling course helped me understand the power of storytelling in building a strong brand. I learned how to craft a compelling brand narrative that resonates with my customers. It has made a significant difference in how my brand is perceived in the market.',
+    text: email,
+    Icon: IoMail,
   },
 ];
