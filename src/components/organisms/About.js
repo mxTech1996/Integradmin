@@ -31,7 +31,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className='py-20 md:py-28 bg-white overflow-hidden'>
+    <section id='about' className='py-20 md:py-28 bg-white overflow-hidden'>
       <div className='container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center'>
         {/* --- Columna de Imagen (Izquierda) --- */}
         <motion.div
@@ -42,7 +42,7 @@ const AboutSection = () => {
           className='w-full h-auto'
         >
           <Image
-            src='/images/consulting-about-us.jpg' // Reemplaza con tu imagen generada
+            src='/images/about.png'
             alt='Integradmin Spindola team collaborating'
             width={600}
             height={600}
@@ -95,17 +95,17 @@ const AboutSection = () => {
             variants={itemVariants}
             className='flex items-center gap-8'
           >
-            <button className='px-8 py-3 bg-stone-600 text-white font-semibold rounded-md hover:bg-stone-700 transition-colors'>
+            {/* <button className='px-8 py-3 bg-stone-600 text-white font-semibold rounded-md hover:bg-stone-700 transition-colors'>
               Read More
-            </button>
-            <div className='flex items-center gap-4 text-gray-400'>
+            </button> */}
+            {/* <div className='flex items-center gap-4 text-gray-400'>
               <a href='#' className='hover:text-stone-600 transition-colors'>
                 <LuTwitter size={20} />
               </a>
               <a href='#' className='hover:text-stone-600 transition-colors'>
                 <LuLinkedin size={20} />
               </a>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
       </div>

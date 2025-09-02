@@ -29,7 +29,7 @@ export default function ContactUs() {
   return (
     <main>
       <div>
-        <Navbar textBlack={true} />
+        {/* <Navbar textBlack={true} /> */}
         <div className='mt-52 flex flex-col justify-between bg-white p-8 text-black pr-20'>
           <h2 className='uppercase text-xl font-bold'>Contact Us</h2>
           <h1>Send us a message and we will happy to help you.</h1>

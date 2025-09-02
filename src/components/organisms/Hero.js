@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import NavBar from './Navbar';
 import { dataSite } from '@/data';
+import Link from 'next/link';
 
 // --- Componente Principal de la Sección Hero ---
 const HeroSection = () => {
@@ -57,9 +58,11 @@ const HeroSection = () => {
               your enterprise.
             </motion.p>
             <motion.div variants={itemVariants}>
-              <button className='px-8 py-3 bg-stone-600 text-white font-semibold rounded-md hover:bg-stone-700 transition-colors'>
-                Explore Our Solutions
-              </button>
+              <Link href={'#services'}>
+                <button className='px-8 py-3 bg-stone-600 text-white font-semibold rounded-md hover:bg-stone-700 transition-colors'>
+                  Explore Our Solutions
+                </button>
+              </Link>
             </motion.div>
           </motion.div>
 

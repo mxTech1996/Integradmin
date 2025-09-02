@@ -5,8 +5,8 @@ import AboutSection from '@/components/organisms/About';
 import WhyChooseUs from '@/components/organisms/WhyChoose';
 import Testimonials from '@/components/organisms/Testimonial';
 import Footer from '@/components/organisms/Footer';
-import ApproachSection from '@/components/organisms/Approach';
-import IndustriesSection from '@/components/organisms/IndustriesSection';
+import ProcessSection from '@/components/organisms/ProcessSection';
+import HowWeWorkSection from '@/components/organisms/HowWeWorkSection';
 import ServicesSection from '@/components/organisms/Services';
 import CallToActionSection from '@/components/organisms/CalltoAction';
 import ProductsSection from '@/components/organisms/ProductsSection';
@@ -16,12 +16,12 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
-      <ApproachSection />
-      <IndustriesSection />
       <WhyChooseUs />
-      <ProductsSection />
-      <ServicesSection />
+      <ProcessSection />
       <CallToActionSection />
+      <ProductsSection />
+      <HowWeWorkSection />
+      <ServicesSection />
       <Testimonials />
       <Footer />
     </div>

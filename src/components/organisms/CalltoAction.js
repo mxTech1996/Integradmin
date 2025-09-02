@@ -1,75 +1,73 @@
-// En tu archivo: /components/CallToActionSection.js
+// En tu archivo: /components/SubscribeSection.js
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { useState } from 'react';
 
-const CallToActionSection = () => {
-  // Variantes para la animación de entrada
-  const textVariants = {
-    hidden: { x: -50, opacity: 0 },
+const SubscribeSection = () => {
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const cardVariants = {
+    hidden: { scale: 0.95, opacity: 0 },
     visible: {
-      x: 0,
+      scale: 1,
       opacity: 1,
-      transition: { duration: 0.7, ease: 'easeOut' },
-    },
-  };
-
-  const imageVariants = {
-    hidden: { x: 50, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 0.7, ease: 'easeOut', delay: 0.2 },
+      transition: { duration: 0.6, ease: 'easeOut' },
     },
   };
 
   return (
-    <section className='bg-orange-600 text-white py-20 md:py-28 overflow-hidden'>
-      <div className='container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center'>
-        {/* --- Columna de Texto (Izquierda) --- */}
+    // Fondo texturizado/color beige claro como en la referencia
+    <section className='py-20 md:py-28 bg-stone-200'>
+      <div className='container mx-auto px-4'>
         <motion.div
-          variants={textVariants}
+          variants={cardVariants}
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
+          className='max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-8 md:p-12 text-center'
         >
-          <p className='font-semibold text-yellow-200 mb-2'>
-            Ready to Transform?
-          </p>
-          <h2 className='text-4xl md:text-5xl font-bold leading-tight mb-6'>
-            Get Professional Help with Your Next Business Challenge.
+          <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+            Get Expert Insights, Delivered to Your Inbox.
           </h2>
-          <p className='text-gray-100 mb-8 leading-relaxed max-w-md'>
-            Whether you&#39;re facing operational hurdles, seeking market
-            expansion, or planning a strategic pivot, our expert consultants are
-            ready to guide you.
+          <p className='text-gray-600 mb-8'>
+            Subscribe to our newsletter for the latest analysis, industry
+            trends, and strategic advice from our experts.
           </p>
-          <button className='px-8 py-3 bg-slate-900 text-white font-semibold rounded-md hover:bg-slate-800 transition-colors'>
-            Schedule a Free Consultation
-          </button>
-        </motion.div>
 
-        {/* --- Columna de Imagen (Derecha) --- */}
-        <motion.div
-          variants={imageVariants}
-          initial='hidden'
-          whileInView='visible'
-          viewport={{ once: true, amount: 0.5 }}
-          className='relative w-full h-[350px] md:h-[450px] flex justify-center lg:justify-end'
-        >
-          <Image
-            src='/images/call.png'
-            alt='Male business consultant smiling'
-            width={450} // Ajusta el ancho según la imagen de referencia
-            height={450} // Ajusta la altura según la imagen de referencia
-            objectFit='contain' // Usa 'contain' para que la imagen no se recorte y se ajuste al espacio
-            className='absolute bottom-0 right-0'
-          />
+          <form
+            className='flex flex-col sm:flex-row gap-4 w-full max-w-lg mx-auto'
+            onSubmit={(e) => {
+              e.preventDefault();
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailRegex.test(email)) {
+                setError('Please enter a valid email address.');
+                return;
+              }
+              setError('');
+              alert('Subscribed!');
+            }}
+          >
+            <input
+              type='email'
+              placeholder='Your Email Address'
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className='w-full px-5 py-3 text-gray-800 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-stone-500 transition-all'
+            />
+            <button
+              type='submit'
+              className='flex-shrink-0 px-8 py-3 bg-stone-600 text-white font-semibold rounded-md hover:bg-stone-700 transition-colors'
+            >
+              Subscribe
+            </button>
+          </form>
+          {error && <p className='text-red-500 mt-2'>{error}</p>}
         </motion.div>
       </div>
     </section>
   );
 };
 
-export default CallToActionSection;
+export default SubscribeSection;

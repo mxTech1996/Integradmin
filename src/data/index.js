@@ -1,4 +1,4 @@
-export const pageName = 'Ibarra';
+export const pageName = 'Integradmin';
 
 export const email = 'info@detroit.com';
 import { IoCall, IoFileTraySharp, IoMail } from 'react-icons/io5';
