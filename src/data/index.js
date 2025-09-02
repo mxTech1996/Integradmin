@@ -66,360 +66,359 @@ export const benefitsData = [
 ];
 
 export const dataSite = {
-  name: 'Ibarra',
-  url: 'https://es.wiktionary.org/wiki/hol',
-  telephone: '5516453412',
+  name: 'Integradmin',
+  url: 'http://www.integradminspindola.lat',
+  telephone: '5579125535',
   email: '',
   address:
-    'AV.RIO MIXCOAC 25, PISO 2 INTERIOR 1 B, CREDITO CONSTRUCTOR, BENITO JUAREZ, CIUDAD DE MEXICO, C.P.03940',
+    'CERRADA (CDA) O PRIVADA (PRIV) ORIZABA 208, INTERIOR 100, ROMA NORTE, CUAUHTEMOC, CIUDAD DE MEXICO, C.P. 06700',
   description:
-    'Our website is designed to provide comprehensive management consulting solutions, aimed at optimizing business operations and driving sustainable growth for organizations. Through a professional and user-friendly platform, we offer companies of all sizes access to tailored strategies in key areas such as strategic planning, human resources management, operational processes, corporate finance, and digital transformation.',
-  subtitle: 'Empowering Businesses with Smart Management Solutions',
+    'Empowering businesses to achieve sustainable growth, our management consulting services provide strategic insights, operational solutions, and tailored guidance. We help organizations streamline processes, optimize performance, and navigate complex business challenges with data driven strategies and expert advice.',
+  subtitle: 'Transforming Strategy into Results for Lasting Business Success',
   image_hero:
-    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarra_1__7E1m3tC.jpg',
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/inte_1_.jpg',
   image_hero2:
-    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarar2__uswwAn4.jpg',
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/inte_2_.jpg',
   iconImage:
-    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/ibarra-admincont-sa-de-cv-high-resolution-logo_mNz8lJ3.png',
+    'https://cms-webserver-statics.s3.amazonaws.com/media/websites/integradmin-spindola-s-de-rl-de-cv-high-resolution-logo.png',
   info: [
     {
-      title: 'Data Driven Decision Coaching',
+      title: 'Strategic Planning',
       description:
-        'Personalized mentoring that leverages analytics dashboards and KPIs to guide executives toward smarter, evidence-based decisions.',
+        'Develop long term business strategies tailored to your company’s goals, market position, and growth objectives.',
     },
     {
-      title: 'AI-Powered Business Diagnostics',
+      title: 'Operational Excellence',
       description:
-        'Use of artificial intelligence tools to analyze company data and provide real-time recommendations for efficiency, cost reduction, and decision-making.',
+        'Analyze and optimize internal processes to improve efficiency, reduce costs, and enhance productivity.',
     },
     {
-      title: 'Virtual Strategy Labs',
+      title: 'Financial Advisory',
       description:
-        'Interactive online workshops where business leaders can simulate scenarios, test strategies, and receive expert feedback instantly.',
+        'Offer insights on budgeting, forecasting, and financial decision-making to strengthen your company’s financial health.',
     },
     {
-      title: 'Sustainability & ESG Consulting',
+      title: 'Organizational Development',
       description:
-        'Advisory services focused on integrating sustainable practices, ESG (Environmental, Social, Governance) compliance, and green certifications into business operations.',
+        'Provide guidance on leadership, team structure, and employee performance to build a resilient workforce.',
     },
     {
-      title: 'Remote Workforce Management Solutions',
+      title: 'Risk Management',
       description:
-        'Specialized consulting to optimize productivity, communication, and performance tracking in hybrid or fully remote teams.',
+        'Identify potential risks and implement strategies to mitigate them while ensuring regulatory compliance.',
     },
   ],
   services: [
     {
-      title: 'Business Strategy Development',
+      title: 'Business Process Optimization',
       description:
-        'Helping organizations define long-term goals, competitive positioning, and growth strategies.',
+        'Streamline workflows and operations to maximize efficiency and reduce costs.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_5_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/inte_4_.jpg',
     },
     {
-      title: 'Financial Planning and Analysis',
+      title: 'Change Management Consulting',
       description:
-        'Providing budgeting, forecasting, and financial strategy guidance to support informed decision-making.',
+        'Guide organizations through transitions, ensuring smooth adoption of new strategies or technologies.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_8_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/inte_5.jpg',
     },
     {
-      title: 'Operational Efficiency Consulting',
+      title: 'Market Analysis & Competitive Intelligence',
       description:
-        'Analyzing business processes to optimize performance, reduce costs, and improve productivity',
+        'Provide insights into market trends, competitor strategies, and growth opportunities.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibrara_6_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/inte_6_.jpg',
     },
     {
-      title: 'Organizational Design and Restructuring',
+      title: 'Leadership & Executive Coaching',
       description:
-        'Designing effective organizational structures, roles, and workflows to enhance collaboration and performance.',
+        'Develop leadership skills and support executives in driving organizational success.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_7_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/inte_7_.jpg',
     },
     {
-      title: 'Change Management and Implementation Support',
+      title: 'Digital Transformation Strategy',
       description:
-        'Guiding businesses through transformations, including technology adoption, process changes, and cultural shifts.',
+        'Advise on integrating technology to improve business operations, customer experience, and innovation.',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/services/ibarra_9_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/services/inte_8.jpg',
     },
   ],
   references: [
     {
-      name: 'Angy Fausto',
+      name: 'Mariana Olvera, Operations Manager',
       description:
-        'Their strategic insights completely transformed our business approach. We now operate with much more efficiency and clarity.',
+        'The consulting team helped us streamline our internal processes and reduce costs significantly. Their insights were practical, actionable, and perfectly tailored to our business needs.',
       rating: 5,
       image: null,
     },
     {
-      name: 'Manger of startup',
+      name: 'James R., CEO',
       description:
-        'Thanks to their digital transformation roadmap, our company successfully implemented new technologies with minimal disruption.',
+        'Thanks to their strategic guidance, we successfully launched into a new market. The market analysis report gave us the confidence and clarity to expand with minimal risk.',
       rating: 5,
       image: null,
     },
     {
-      name: 'David H., HR Director',
+      name: 'Angelica Faerra',
       description:
-        'The leadership assessment and training programs were invaluable. Our managers are now more confident and effective in their roles.',
+        'Their leadership coaching transformed the way our executives manage teams. We’ve noticed a clear improvement in collaboration and productivity across the company.',
       rating: 5,
       image: null,
     },
     {
-      name: 'Laura M., Business Owner',
+      name: 'Alejandra Mestina,Developer',
       description:
-        'Professional, responsive, and results-driven. Their guidance has helped our organization grow sustainably and strategically.',
+        'The digital transformation roadmap they created helped us modernize our operations and improve the customer experience. It was a game-changer for our organization.',
       rating: 5,
       image: null,
     },
     {
-      name: 'July Ignacio',
+      name: 'Ana K, Compliance Office',
       description:
-        'The team’s expertise in process optimization helped us cut costs and improve productivity across all departments',
+        'I was impressed by the level of professionalism and detail in their risk and compliance toolkit. It saved us time and ensured we met all industry regulations.',
       rating: 5,
       image: null,
     },
   ],
   products: [
     {
-      id: 947,
-      name: 'Market Analysis Report',
+      id: 963,
+      name: 'Workflow Automation Toolkit',
       category: null,
-      description:
-        'Detailed research on industry trends, competitors, and opportunities for growth.',
-      price: '145.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_16_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 953,
-      name: 'KPI Monitoring Dashboard',
-      category: null,
-      description:
-        'Customizable dashboard to track performance metrics across departments.',
-      price: '23.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra20.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 940,
-      name: 'Organizational Structure Design Kit',
-      category: null,
-      description:
-        'Organizational analysis and redesign package to improve hierarchies, workflows, and key roles within the company,Consultport ,Organizational Design Tool Kit,Consultport ,Organizational Design Toolkit,PDF guide ,organizational chart template; covers types of structures, key factors, and strategic considerations.',
-      price: '120.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_4.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 943,
-      name: 'Human Capital Development Plan',
-      category: null,
-      description:
-        "A Human Capital Development Plan is a strategic framework designed to enhance an organization's workforce capabilities. It focuses on aligning employee skills, experiences, and potential with organizational goals, ensuring sustainable growth and adaptability in a dynamic business environment.",
-      price: '145.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarrra_12_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 942,
-      name: 'Process Optimization Manual',
-      category: null,
-      description:
-        'A Process Optimization Manual is a comprehensive guide designed to help organizations enhance their workflow efficiency, reduce costs, and improve overall performance. It provides structured methodologies, tools, and best practices to identify inefficiencies and implement improvements effectively.',
-      price: '178.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_11.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 948,
-      name: 'Leadership Assessment Tool',
-      category: null,
-      description:
-        'Evaluates management skills, team dynamics, and leadership effectiveness.',
-      price: '175.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra__17_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 941,
-      name: 'Financial Health Report',
-      category: null,
-      description:
-        "A Financial Health Report is a comprehensive assessment tool that evaluates the financial stability and risk profile of a company. It provides an in depth analysis based on actual financial data, offering insights into the company's current and historical financial health.",
-      price: '90.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_10.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 939,
-      name: 'Business Strategy Blueprint',
-      category: null,
-      description:
-        'A detailed analysis of business objectives, competitive positioning, revenue models, and an execution roadmap,In depth exploration of market opportunities, operational efficiencies, and strategic initiatives aimed at sustainable and scalable growth,Internal valuation,equivalent to 4 credits and an estimated development timeline of 3 to 4 weeks.',
-      price: '130.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra._3.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 951,
-      name: 'Employee Training Module',
-      category: null,
-      description:
-        'Digital course or materials focused on improving skills and productivity within teams.',
-      price: '12.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_19_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 954,
-      name: 'Digital Adoption Planner',
-      category: null,
-      description:
-        'Roadmap for integrating new technologies and managing organizational change effectively.',
-      price: '18.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_21.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 952,
-      name: 'Compliance Audit Guide',
-      category: null,
-      description:
-        'Toolkit to ensure the organization meets legal and regulatory requirements.',
-      price: '15.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_20.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 950,
-      name: 'Budget Forecast Template',
-      category: null,
-      description:
-        'Pre designed template to plan financial projections and monitor expenses.',
-      price: '9.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_18.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 944,
-      name: 'Digital Transformation Roadmap',
-      category: null,
-      description:
-        'A Digital Transformation Roadmap is a strategic plan that guides an organization through the process of integrating digital technologies into all areas of its business. It serves as a blueprint for transforming business operations, enhancing customer experiences, and fostering innovation. The roadmap outlines the necessary steps, resources, and timelines to achieve a successful digital transformation.',
-      price: '138.00',
-      stock: 100,
-      content: '',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/IBARRA_13_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 949,
-      name: 'Operational Efficiency Checklist',
-      category: null,
-      description:
-        'Step by step guide to streamline processes and reduce operational bottlenecks.',
+      description: 'Tools and templates to automate repetitive business tasks.',
       price: '189.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/pexels-rdne-9034219.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_17.jpg',
       image2: null,
       image3: null,
     },
     {
-      id: 945,
-      name: 'Risk and Compliance Toolkit',
+      id: 969,
+      name: 'Market Entry Feasibility Report',
       category: null,
       description:
-        'A Risk and Compliance Toolkit is a comprehensive set of resources designed to help organizations manage and mitigate risks associated with regulatory non-compliance. It integrates various features such as compliance tracking, audit management, risk assessment, and incident management to ensure businesses adhere to legal, industry-specific, and internal standards.',
+        'Assessment tool for analyzing the viability of entering new markets.',
+      price: '13.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_24_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 970,
+      name: 'Project Management Playbook',
+      category: null,
+      description:
+        'Standardized approaches and best practices for managing business projects effectively.',
+      price: '18.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_25_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 960,
+      name: 'Performance Dashboard Setup',
+      category: null,
+      description:
+        'The Performance Dashboard Setup is a tailored solution that consolidates key metrics and data into a single, easy to use platform. It provides real-time visibility into business performance, helping organizations monitor progress, identify trends, and make data-driven decisions quickly and effectively.',
+      price: '188.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_14.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 961,
+      name: 'Market Research & Competitor Analysis Pack',
+      category: null,
+      description:
+        'The Market Research & Competitor Analysis Pack is a comprehensive toolkit designed to provide businesses with actionable insights into their target market, industry trends, and competitive landscape. It equips organizations with the knowledge needed to identify opportunities, minimize risks, and build data-driven strategies for sustainable growth.',
+      price: '156.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_15.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 955,
+      name: 'Financial Health Assessment Report',
+      category: null,
+      description:
+        'The Financial Health Assessment Report provides a comprehensive evaluation of an individual’s or organization’s financial condition. It consolidates financial data, analyzes trends, and identifies strengths, weaknesses, and potential risks. This report is designed to support informed decision making, strategic planning, and long-term financial stability.',
       price: '89.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_14_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_9_.jpg',
       image2: null,
       image3: null,
     },
     {
-      id: 946,
-      name: 'Performance Dashboard Setup',
+      id: 956,
+      name: 'Process Optimization Manual',
       category: null,
       description:
-        'A Performance Dashboard Setup is a strategic tool designed to monitor and visualize key performance indicators (KPIs) and metrics in real time. It consolidates data from various sources into a unified interface, enabling organizations to track performance, identify trends, and make informed decisions.',
-      price: '160.00',
+        'Step by step guide to streamline operations and improve efficiency.',
+      price: '56.00',
       stock: 100,
       content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/ibarra_15_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_10.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 959,
+      name: 'Business Performance Dashboard',
+      category: null,
+      description:
+        'A customizable digital tool that tracks key performance indicators (KPIs), financial metrics, and operational results in real time to support data-driven decision making.',
+      price: '98.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_13_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 968,
+      name: 'Customer Experience Improvement Guide',
+      category: null,
+      description:
+        'Practical steps to enhance client satisfaction and loyalty.',
+      price: '4.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_23.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 967,
+      name: 'Cost Reduction Framework',
+      category: null,
+      description:
+        'Methodologies and strategies for identifying and cutting unnecessary expenses.',
+      price: '9.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_22.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 966,
+      name: 'Regulatory Compliance Checklist',
+      category: null,
+      description:
+        'A step by step guide to ensure adherence to industry standards.',
+      price: '10.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_21.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 957,
+      name: 'Human Capital Development Plan',
+      category: null,
+      description:
+        'The Human Capital Development Plan is a strategic framework designed to maximize the value, performance, and growth of an organization’s workforce. It provides structured initiatives and tailored strategies to align employee skills, motivation, and productivity with organizational goals, ensuring long-term business success.',
+      price: '167.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_11.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 958,
+      name: 'Digital Transformation Roadmap',
+      category: null,
+      description:
+        'The Digital Transformation Roadmap is a strategic guide that outlines the steps, priorities, and resources needed for an organization to successfully adopt and integrate digital technologies. It ensures a structured transition toward innovation, efficiency, and competitive advantage, aligning digital initiatives with overall business objectives.',
+      price: '129.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_12.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 964,
+      name: 'Employee Training Modules',
+      category: null,
+      description:
+        'Ready-to-use programs for skill development and leadership training.',
+      price: '150.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_19_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 965,
+      name: 'KPI Tracking Templates',
+      category: null,
+      description:
+        'Pre designed spreadsheets and dashboards for performance monitoring.',
+      price: '230.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_20_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 962,
+      name: 'Strategic Growth & Expansion Plan',
+      category: null,
+      description:
+        'The Strategic Growth & Expansion Plan is a structured framework designed to help organizations scale effectively, enter new markets, and achieve sustainable long term growth. It combines market insights, financial forecasting, and operational strategies to ensure businesses expand with confidence and minimize risks.',
+      price: '166.00',
+      stock: 100,
+      content: '',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/inte_16_.jpg',
       image2: null,
       image3: null,
     },
