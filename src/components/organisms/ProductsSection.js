@@ -66,99 +66,9 @@ const ProductsSection = ({ isHome = true }) => {
           whileInView='visible'
           viewport={{ once: true, amount: 0.1 }}
         >
-          {productsData.slice(0, 8).map((product) => {
-            const handleClick = () => {
-              handleAddOrRemoveProduct(product.id);
-            };
-
-            const isInCart = validateProductInCart(product.id);
-            return (
-              <motion.div
-                key={product.id}
-                variants={itemVariants}
-                initial='rest'
-                whileHover='hover'
-                animate='rest'
-                className='group relative h-96 rounded-lg overflow-hidden shadow-lg'
-              >
-                {/* Imagen de Fondo con animación de zoom */}
-                <div className='absolute inset-0'>
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    layout='fill'
-                    objectFit='cover'
-                    className='transition-transform duration-500 ease-in-out group-hover:scale-105'
-                  />
-                </div>
-                {/* --- CAMBIO: Overlay oscuro más pronunciado para legibilidad --- */}
-                <div className='absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors duration-400' />
-
-                {/* Contenido de la tarjeta */}
-                <div className='relative h-full flex flex-col justify-between p-6 text-white'>
-                  <div>
-                    <p className='font-bold text-xl text-white'>
-                      ${product.price} USD
-                    </p>
-                  </div>
-
-                  {/* --- Contenido central que se anima al pasar el mouse --- */}
-                  <motion.div
-                    variants={contentVariants}
-                    className='text-center'
-                  >
-                    <h3 className='text-3xl font-bold leading-tight'>
-                      {product.name}
-                    </h3>
-                    {/* --- CAMBIO: Descripción animada que aparece al pasar el mouse --- */}
-                    <motion.p
-                      variants={descriptionVariants}
-                      className='mt-2 text-sm text-gray-300 line-clamp-2'
-                    >
-                      {product.description}
-                    </motion.p>
-                  </motion.div>
-
-                  <div>
-                    <button
-                      className={`w-full mt-4 px-6 py-3 border border-white/50 ${
-                        isInCart ? 'bg-red-500' : 'bg-transparent'
-                      } text-white font-semibold rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300`}
-                      onClick={handleClick}
-                    >
-                      {isHome
-                        ? 'Get a quote'
-                        : isInCart
-                        ? 'Remove from cart'
-                        : 'Add to cart'}
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
-        </motion.div>
-      </div>
-      {!isHome && (
-        <div className='container mx-auto px-4 mt-10'>
-          <motion.h2
-            initial={{ y: -20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            className='text-4xl md:text-5xl font-bold text-white text-center mb-16'
-          >
-            Our Additionals Products
-          </motion.h2>
-
-          <motion.div
-            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'
-            variants={containerVariants}
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            {productsData.slice(8, 13).map((product) => {
+          {productsData
+            .filter((product) => parseFloat(product.price) > 100)
+            .map((product) => {
               const handleClick = () => {
                 handleAddOrRemoveProduct(product.id);
               };
@@ -229,6 +139,100 @@ const ProductsSection = ({ isHome = true }) => {
                 </motion.div>
               );
             })}
+        </motion.div>
+      </div>
+      {!isHome && (
+        <div className='container mx-auto px-4 mt-10'>
+          <motion.h2
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            className='text-4xl md:text-5xl font-bold text-white text-center mb-16'
+          >
+            Our Additionals Products
+          </motion.h2>
+
+          <motion.div
+            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'
+            variants={containerVariants}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            {productsData
+              .filter((product) => parseFloat(product.price) < 100)
+              .map((product) => {
+                const handleClick = () => {
+                  handleAddOrRemoveProduct(product.id);
+                };
+
+                const isInCart = validateProductInCart(product.id);
+                return (
+                  <motion.div
+                    key={product.id}
+                    variants={itemVariants}
+                    initial='rest'
+                    whileHover='hover'
+                    animate='rest'
+                    className='group relative h-96 rounded-lg overflow-hidden shadow-lg'
+                  >
+                    {/* Imagen de Fondo con animación de zoom */}
+                    <div className='absolute inset-0'>
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        layout='fill'
+                        objectFit='cover'
+                        className='transition-transform duration-500 ease-in-out group-hover:scale-105'
+                      />
+                    </div>
+                    {/* --- CAMBIO: Overlay oscuro más pronunciado para legibilidad --- */}
+                    <div className='absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors duration-400' />
+
+                    {/* Contenido de la tarjeta */}
+                    <div className='relative h-full flex flex-col justify-between p-6 text-white'>
+                      <div>
+                        <p className='font-bold text-xl text-white'>
+                          ${product.price} USD
+                        </p>
+                      </div>
+
+                      {/* --- Contenido central que se anima al pasar el mouse --- */}
+                      <motion.div
+                        variants={contentVariants}
+                        className='text-center'
+                      >
+                        <h3 className='text-3xl font-bold leading-tight'>
+                          {product.name}
+                        </h3>
+                        {/* --- CAMBIO: Descripción animada que aparece al pasar el mouse --- */}
+                        <motion.p
+                          variants={descriptionVariants}
+                          className='mt-2 text-sm text-gray-300 line-clamp-2'
+                        >
+                          {product.description}
+                        </motion.p>
+                      </motion.div>
+
+                      <div>
+                        <button
+                          className={`w-full mt-4 px-6 py-3 border border-white/50 ${
+                            isInCart ? 'bg-red-500' : 'bg-transparent'
+                          } text-white font-semibold rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300`}
+                          onClick={handleClick}
+                        >
+                          {isHome
+                            ? 'Get a quote'
+                            : isInCart
+                            ? 'Remove from cart'
+                            : 'Add to cart'}
+                        </button>
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
           </motion.div>
         </div>
       )}
