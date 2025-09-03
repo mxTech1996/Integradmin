@@ -1,6 +1,6 @@
 export const pageName = 'Integradmin';
 
-export const email = 'info@detroit.com';
+export const email = 'integradmin@emailsecure.lat';
 import { IoCall, IoFileTraySharp, IoMail } from 'react-icons/io5';
 
 export const navData = [

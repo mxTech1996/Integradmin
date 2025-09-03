@@ -13,7 +13,7 @@ const NavBar = ({ withAll = true, withCart = false, textBlack = false }) => {
   const navLinks = [
     { name: 'About Us', href: '#about' },
     { name: 'Services', href: '#services' },
-    { name: 'Industries', href: '#industries' },
+    { name: 'Testimonials', href: '#testimonials' },
     { name: 'Why Choose Us', href: '#why-us' },
   ];
 
