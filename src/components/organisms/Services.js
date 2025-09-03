@@ -73,7 +73,7 @@ const ServicesSection = () => {
                 <div>
                   <h3 className='text-2xl font-bold'>{event.title}</h3>
                   <div className='mt-4 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-stone-300'>
-                    <Link href={'#services'}>
+                    <Link href={'/contact'}>
                       <span>Learn More</span>
                     </Link>
                     <LuArrowRight />
