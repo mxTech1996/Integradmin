@@ -12,6 +12,8 @@ const footerLinks = [
   { name: 'Products', href: '#products' },
   { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact Us', href: '/contact' },
+  { name: 'Privacy Policy', href: 'pdf/AP.INTEGRADMIN.SEPTIEMBRE.2025.pdf' },
+  { name: 'Terms of Service', href: 'pdf/TYC.INTEGRADMIN.SEPTIEMBRE.2025.pdf' },
 ];
 
 const Footer = () => {
